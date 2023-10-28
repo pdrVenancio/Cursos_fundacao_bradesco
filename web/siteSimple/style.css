@@ -1,0 +1,51 @@
+/*para definir "variaveis globais"*/
+:root{
+    --green: #00FF00;
+    --white: #ffffff;
+    --black: #000
+}
+*{
+    color: var(--fontColor);
+    font-family: Helvetica;
+}
+body {
+    font-family: monospace;
+    background: var(--bg);   
+}   
+ul {    
+    font-family: helvética;   
+}
+li {
+    list-style: circle;        
+}
+    
+.list {   
+    list-style: square; 
+}
+/*tema claro*/
+.light-theme{
+    --bg: var(--green);
+    --fontColor:var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+}
+
+.darck-theme{
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+}
+
+.btn{
+    position: absolute;
+    top: 20px;
+    left: 300px;
+    border-radius: 10px;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+.btn:focus{
+    outline-style: none;
+}
