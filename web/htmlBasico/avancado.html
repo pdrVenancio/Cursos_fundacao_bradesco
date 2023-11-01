@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TABELAS</h1>
+    <TABLE>
+        <TR>
+           <TD> Nome </TD>
+           <TD> Sobrenome </TD>
+        <TR>
+           <TD> Anna </TD>
+           <TD> Santos </TD>
+        <TR>
+           <TD> Vanessa </TD>
+           <TD> Medeiros </TD>
+     </TABLE>
+     <br>
+     <H1>FORMULARIOS</H1>
+     <FORM ACTION="sazonpj75@gmail.com" METHOD="get">
+        <!--
+            action: para onde vai ser mandado o formulario
+            name: nome da variavel que armazena os dados
+            maxlength: numero maximo de caracteres que podem ser colocados
+        -->
+		<P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=TEXT  NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+		<P>Estado: <INPUT TYPE =text NAME="uf" SIZE="2" VALUE="SP"></FONT></P>
+	</FORM>
+    <FORM ACTION="sazonpj75@gmail.com" METHOD="get">
+		<P><FONT FACE="CALIBRI">Nome: <INPUT TYPE=text NAME="nome" SIZE="25" MAXLENGHT="50"></P>
+		<P>Nº do cartão de crédito <INPUT TYPE=text NAME="nun_cartao"  SIZE="16"></P>
+		<P>Senha: <INPUT TYPE=password NAME="senha" SIZE="6"></P>
+		<P>Escolha unica<BR>
+            <INPUT TYPE=radio NAME="selecao-cartao" CHECKED>VISA
+            <BR>
+            <INPUT TYPE=radio NAME="selecao-cartao">MASTERCARD
+        </P>
+        <P>Multipla escola<BR>
+            <INPUT TYPE=checkbox NAME="horario1" SIZE="1">8h às 12h<BR>
+			<INPUT TYPE=checkbox NAME="horario2" SIZE="1">13h às 15h<BR>
+			<INPUT TYPE=checkbox NAME="horario2" SIZE="1">16h às 18h
+        </P>
+        <P>textarea</textarea>: <TEXTAREA NAME="ref" ROWS="2" COLS= "40"></TEXTAREA></P>
+        <p>
+            <SELECT NAME="cidades">
+                <OPTION>Londres 
+                <OPTION>Paris
+                <OPTION>Roma 
+                <OPTION>Madri
+            </SELECT>
+        </p>
+        <INPUT TYPE=submit VALUE="Enviar"><INPUT TYPE=reset VALUE="Limpar"><INPUT TYPE=hidden NAME="cpf" VALUE="verdadeiro">
+    </FORM>
+    <H1>FRAMES</H1>
+    <frameset cols="25%,*,25%">
+        <frame src="index.html">
+        <frame>
+        <frame>
+    </frameset>
+</body>
+</html>
